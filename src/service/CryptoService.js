@@ -13,7 +13,7 @@ class CryptoService {
     while (true) {
       page++;
       const response = await this.repository.list(page);
-      console.log('response => ', response);
+      // console.log('response => ', response);
       const data = response.data;
 
       yield data.map(localData);
