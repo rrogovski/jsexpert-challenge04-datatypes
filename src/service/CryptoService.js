@@ -9,10 +9,10 @@ class CryptoService {
     // TODO: implementar generator que chama a repository fazendo a paginação
     const localData = data => new Crypto(data);
 
-    let page = 0;
+    let page = 1, limit = 5;
     while (true) {
-      page++;
       const response = await this.repository.list(page);
+      page++;
       // console.log('response => ', response);
       const data = response.data;
 
