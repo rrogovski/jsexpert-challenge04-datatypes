@@ -1,3 +1,5 @@
+Rodrigo Rogovski
+
 # Story: Sua própria carteira Crypto
 
 ## Motivação
